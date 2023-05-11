@@ -4,8 +4,8 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: website/index.html/style.css
-  upload: website/index.html/style.css
+  static_files: website/index.html
+  upload: website/index.html
 
 - url: /(.*)
   static_files: website/\1
