@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Musik Jazz</title> 
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+    }	 
+    
+    header {
+      display: inline;
+    }
+    
+    nav {
+      background-color: #6096B4;
+      padding: 5px;
+      position: sticky;
+      top: 0;
+    }
+    
+    nav ul {
+      padding-inline: 4rem;
+      display: flex;
+      gap: 2rem;
+    }	
+    
+    nav li {	
+      list-style-type: none;
+    }
+    
+    nav a {
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      color: whitesmoke;
+    } 
+    
+    nav a:hover {
+      font-weight: bold;
+      color: black;
+      background-color: #FFFF00;
+      padding: .5rem 1.5rem;
+      border-radius: 999px;
+      transition: all .2s ease-in-out;
+    }		
+    
+    main {
+      padding: 20px;
+      display: flex;
+      gap: 1.5rem; 
+    }
+    
+    aside {
+      flex: 1;		
+    }
+    
+    footer {
+      padding: 10px;
+      font-weight: bold;
+      color: white;
+      background-color: #6096B4;
+      text-align: center;
+    }
+    
+    h1, h4{
+      color: #FFFF00;
+    }
+    
+    h2, h3 {
+      color: #15133C;
+    }
+    
+    h4 {
+      color: #ffff99;
+    }
+    
+    #content {
+      flex: 5;
+      
+      display:flex;
+      flex-flow: column nowrap;
+      gap: 1rem 2rem;
+    }
+    
+    .jumbotron {
+      font-size: 20px;
+      padding: 100px;
+      background: linear-gradient(to left, #99ccff 0%, #ffccff 100%);
+      text-align: center;
+      color: white;
+    }
+    
+    .profile header {
+      text-align: center;
+    }
+    
+    .featured-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .profile img {
+      width: 200px;
+      border-radius: 30px;
+    }
+    
+    main aside .social-media {
+      height: 100%;
+      display: flex;
+    }
+    
+    main aside .social-media ul {
+      padding: 0.5rem 5rem;
+      margin: auto;
+      border: 3px groove #6096B4; 
+      background-color: whitesmoke;  
+      display: flex;
+      flex-flow: nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    
+    main aside .social-media li {
+      list-style-type: none;
+    }
+    
+    main aside .social-media li a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: dar;
+      transition: all .1s ease-in-out;
+    }
+    
+    main aside .social-media li a:hover {
+      color: black;
+    }
+    
+    .card {
+      box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(to left, #99ccff 0%, #ffccff 100%);
+      border-radius: 5px;
+      padding: 20px;
+    }
+    
+    @media screen and (max-width: 1200px) {
+      
+      main {
+        flex-flow: column nowrap;
+      }
+      
+      main aside {
+        align-self: center;	
+      }	
+    }
+    
+    @media screen and (max-width: 768px) {
+      nav ul {
+        justify-content: center;
+      }
+      
+      main aside {
+        align-self: stretch;
+      }    
+    }
+    </style>
+  </head>
+
+  <body>
+    <header>
+       <div class="jumbotron">
+         <h1>Musik</h1>
+         <h4>"Hidup itu bagaikan musik jazz, paling baik jika kamu improvisasi"</h4> 
+	   </div> 
+       
+	   <nav>
+         <ul>
+           <li><a href="#sejarah">Sejarah</a></li>
+           <li><a href="#definisi">Definisi</a></li>   
+           <li><a href="#ciri-ciri">Ciri</a></li> 
+         </ul> 
+       </nav>
+    </header>
+
+    <main>
+      <div id="content"> 
+        <article id="sejarah" class="card"> 
+          <h2>Sejarah</h2>
+          <img src="images/Sejarah.jpg" class="featured-image" alt="sejarah">
+          <p>
+            Musik jazz pada awalnya adalah musik tradisional Amerika Serikat yang dikembangkan oleh warga Afrika-Amerika di Amerika Selatan. Dipercaya, musik jazz yang lahir pada akhir abad 19 memasuki abad 20 ini merupakan perpaduan antara musik Eropa dan tradisi Afrika.
+          </p>
+
+          <p>
+            Musik Afrika memberikan pengaruh dalam musik jazz berupa ritme yang terus menerus, serta pergerakan dan permainan emosi yang kelak begitu kental dalam karakter musik jazz. Sementara musik Eropa lebih memberikan pengaruh pada kualitas musikal, yaitu yang berkaitan dengan harmoni dan melodi.
+          </p>
+          
+          <p>
+            Perpaduan dua tradisi yang antonim ini kemudian menghasilkan satu jenis musik baru yang me-reinterpretasi-kan penggunaan nada-nada dalam kombinasi baru, menciptakan nada-nada biru yang mengekspresikan perasaan, baik sedih maupun senang.
+          </p>
+
+          <p>
+            Cikal bakal musik jazz juga tak lepas dari teriakan budak Afrika yang tengah meladang di Amerika, kombinasi bunyi-bunyi dari gaya musisi-musisi New Orleans, kemudian musik gospel yang berkembang menjadi blues, dan beberapa bahan dasar lainnya yang berkombinasi membentuk jenis musik baru.
+          </p>
+		   
+        </article>  
+ 
+        <article id="definisi" class="card"> 
+          <h2>Definisi</h2>
+          <img src="images/Definisi.jpg" class="featured-image" alt="definisi"> 
+          <p>
+            Asal usul kata 'jazz' merupakan salah satu kata yang paling banyak dicari dalam bahasa Inggris Amerika modern. Seperti yang dijelaskan dalam wikipedia, ‘jazz’ muncul sebagai istilah dari bahasa slang, sebuah daerah pantai barat Amerika Serikat. Penggunaan istilah ‘jazz’ pertama kali digunakan sebagai istilah musik pada tahun 1915 di Chicago.
+          </p>
+            Beralih ke definisi, menurut Concise Oxford English Dictionary Revised Edition 2006, jazz adalah satu jenis musik yang berasal dari orang Amerika kulit hitam yang menonjolkan improvisasi, sinkopasi, ritme, dan diiringi dengan instrumen khusus.
+          <p>
+            Lebih dalam, Whitney Ballet menjelaskan bahwa jazz merupakan jenis musik yang sangat personal yang mirip seperti blues, memiliki vokal yang unik, suara instrumental, dan ditambah improvisasi dari pemainnya. Secara singkatnya, jazz merupakan sebuah kesempurnaan dalam sebuah musi
+          </p>
+
+          <p>
+            Lalu bagaimana sebuah musik dapat dikatakan sebagai musik jazz? Spinditty menjelaskan bahwa musik dapat dikatakan sebagai jazz ketika terdapat harmoni, ritme, dan melodi yang berirama. Tak sampai di situ, musisi juga bisa menambahlan musik swing dan improvisasi.
+          </p>
+
+          <p>
+            Chris McGregor pernah menulis artikel pada tahun 1964 berjudul “The Classic”. McGregor menyatakan bahwa swing merupakan salah satu elemen paling penting dalam musik jazz, Selain swing, unsur improvisasi juga digarisbawahi oleh McGregor. “Musik jazz adalah sebuah seni yang dibuat secara spontan,” tulis McGregor.      
+          </p>
+
+          <p>
+            Secara garis besar, jazz adalah musik yang di dalamnya terdapat sebuah ritme yang memiliki harmoni, improvisasi, dan dimainkan menggunakan alat musik tertentu.
+          </p>
+          Instrumen yang digunakan dalam musik jazz biasanya berupa alat musik modern dan beberapa tambahan alat musik orkestra, seperti: contrabass, gitar bass, piano, trombone, gitar, saxophone, clarinet, terompet, dan biola.
+          <p>
+        </article> 
+ 
+        <article id="ciri-ciri" class="card">      
+          <h2>Ciri-ciri</h2>
+          <p>
+            Aliran musik jazz masih dapat dikategorikan ke dalam jajaran musik populer. Hingga saat ini, melalui berbagai perkembangan di setiap zamannya, musik jazz telah banyak memunculkan aliran baru yang masih menginduk dalam rahim jazz, yang tentunya masing-masing memiliki ciri-ciri khusus yang berbeda.
+          </p>
+
+          <p><b>
+            Namun secara umum, ciri-ciri musik jazz dapat kita rinci sebagaimana berikut:
+          </b></p>
+
+ 
+          <section>
+             <h3>Improvisai</h3>
+             <img src="images/improvisasi.jpg" class="featured-image" alt="improvisasi">
+             <p>
+              Satu ciri khas yang paling ditonjolkan dalam musik jazz adalah improvisasi. Bahkan dalam pertunjukan musik jazz, sangat jarang ada musisi jazz yang memainkan lagu yang sama dengan gaya yang sama berulang kali. Hal ini tentu masih berkaitan dengan kebiasaan awal musik jazz yang memang dimainkan dengan improvisasi.
+             </p>
+          </section>  
+ 
+          <section>
+             <h3>Penggunaan instrumen</h3>
+             <img src="images/Penggunaan instrumen.jpg" class="featured-image" alt="penggunaan instrumen">
+             <p>
+              Satu ciri musik jazz yang menonjol dan berbeda dari aliran musik populer pada umumnya terletak pada penggunaan alat musik. Instrumen yang digunakan dalam musik jazz biasanya menggunakan alat musik yang memang lazim digunakan pada aliran musik jazz, seperti: terompet, saksofon, piano, gitar, biola, drum, dan contrabass atau gitar bass.
+             </p> 
+          </section> 
+
+          <section>
+            <h3>Sinkopasi</h3>
+            <img src="images/Sinkopasi.jpg"class="featured-image" alt="sinkopasi">
+            <p>
+              Satu unsur yang juga ditonjolkan dalam karakter musik jazz adalah sinkopasi yang cukup mendominasi. Sinkopaso (syncop) adalah penekanan atau aksentuasi pada not-not upbeat (not-not dengan ketukan lemah).
+            </p>
+          </section>
+          
+          <section>
+            <h3>Blue note</h3>
+            <img src="images/Blue note.jpg"class="featured-image" alt="blue note">
+            <p>
+              Blue note adalah nada yang dimainkan sedikit berbeda dari nada standar. Biasanya perubahan nada seputar antara quartertone dan semitone, namun ini masih bervariasi tergantung pada konteks musik. Blue note sangat identik dengan musik blues sebagai awal kemunculannya, dan musik jazz bisa dibilang masih berkaitan erat dengan musik blues sebagai cikal bakal.
+            </p>
+          </section>
+
+          <section>
+            <h3>Swing</h3>
+            <img src="images/Swing.jpg"class="featured-image" alt="swing">
+            <p>
+              Swing adalah irama mendayu-dayu yang menjadi ciri khas musik jazz. Hampir semua komposisi musik jazz didominasi dengan unsur swing yang menjadi sumber kenikmatan musik jazz.
+            </p>
+          </section>
+        </article>
+    </div>
+
+    <aside>
+      <article class="profile card">
+          <header> 
+             <h2>Profile</h2>
+             <figure>
+                <img src="images/Profile.jpg">
+             </figure>
+           </header>
+           <section>
+              <p style="text-align: center;"><b>Tantri Sulastri</b></p>
+              <p style="text-align: center;"><b>Universitas Widya Husada Semarang</b></p>
+              <p style="text-align: center;"><b>Bangkit Student ID: C372DSY0878</b></p>
+              <div class="social-media">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/tantri-sulastri-902026260"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="https://github.com/Tantrisulastri"><i class="fab fa-github"></i></a></li>
+                  <li><a href="https://instagram.com/taaannn.s_?igshid=ZGUzMzM3NWJiOQ=="><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://wa.me/message/ZZ76CVSGK6LKO1"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+              </div>
+           </section>
+      </article> 
+     </aside>
+    </main>
+    <footer>
+      <p>&#169; 2023, Dicoding x Bangkit Academy</p>
+    </footer>
+</body>
+</html>
